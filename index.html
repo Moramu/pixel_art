@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 
+
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg">
+    <h1>Lab: Pixel Art Maker</h1>
+
+    <h2>Choose Grid Size</h2>
+    <form id="sizePicker">
+        Grid Height:
+        <input type="number" id="inputHeight" name="height" min="1" value="2" max="50">
+        Grid Width:
+        <input type="number" id="inputWidth" name="width" min="1" value="2" max="50">
+        <input type="submit">
+    </form>
+
+    <h2>Pick A Color</h2>
+    <input type="color" id="colorPicker" value="#FFE4C4">
+    <p>
+    <img class="hint" data-popup-open="popup" src="https://image.ibb.co/ewPeAc/hint.png">
+    
+    <div class="popup" data-popup="popup">
+        <div class="popup-inner">
+            <h2>Hint</h2>
+                <p>Left mouse button click -> Paint</p>
+                <p>Right mouse button click-> Erase sector</p>
+                <p>Middle mouse button click -> Erase all</p>
+            <a class="popup-close" data-popup-close="popup" href="#">x</a>
+        </div>
+        </div>
+    
+    <h2 class="test">Design Canvas</h2>
+    <script type="text/javascript">
+    var d = document.getElementById("test");
+    d.toggleClass += " otherclass";
+    </script>
+    <table id="pixelCanvas"></table>
+    
+    <script src="design.js"></script>
+</body>
+</html>

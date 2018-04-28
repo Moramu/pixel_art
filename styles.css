@@ -1,0 +1,116 @@
+body {
+    text-align: center;
+    height: 100%;
+    color: grey;
+}
+
+.bg {
+    height: 100%;
+    background-image: url("http://www.powerpointhintergrund.com/uploads/2017/05/video-games-pixel-art-wallpapers-hd--desktop-and-mobile-backgrounds-13.png"); 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+
+}
+
+h1 {
+    font-family: 'VT323', monospace;
+    font-size: 70px;
+    margin: 1em;
+    background: -webkit-linear-gradient(#eee, #111);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    margin: 1em 0 0.25em;
+    color: grey;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    border-color: grey;
+}
+
+tr {
+    height: 20px;
+    border-color: grey;
+}
+
+td {
+    width: 20px;
+    border-color: grey;
+}
+
+input[type=number] {
+    width: 6em;
+}
+
+.popup {
+width:100%;
+height:100%;
+display:none;
+position:fixed;
+top:0px;
+left:0px;
+background:rgba(0,0,0,0.75);
+}
+.popup-inner {
+max-width:300px;
+width:90%;
+padding:40px;
+position:absolute;
+top:50%;
+left:50%;
+-webkit-transform:translate(-50%, -50%);
+transform:translate(-50%, -50%);
+box-shadow:0px 2px 6px rgba(0,0,0,1);
+border-radius:3px;
+background:#fff;
+}
+.popup-close {
+width:30px;
+height:30px;
+padding-top:4px;
+display:inline-block;
+position:absolute;
+top:0px;
+right:0px;
+transition:ease 0.25s all;
+-webkit-transform:translate(50%, -50%);
+transform:translate(50%, -50%);
+border-radius:1000px;
+background:rgba(0,0,0,0.8);
+font-family:Arial, Sans-Serif;
+font-size:20px;
+text-align:center;
+line-height:100%;
+color:#fff;
+}
+.popup-close:hover {
+-webkit-transform:translate(50%, -50%) rotate(180deg);
+transform:translate(50%, -50%) rotate(180deg);
+background:rgba(0,0,0,1);
+text-decoration:none;
+}
+
+#pixelCanvas {
+	background-color: #e5e7ea;
+}
+
+
+
+
+
